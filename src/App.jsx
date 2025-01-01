@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import SectionHeader from './components/sectionHeader';
+import SectionHeader from './components/SectionHeader';
 import Testimonial from './components/Testimonial';
 import Buddies from './components/Buddies';
 import ContactForm from './components/ContactForm';
