@@ -1,3 +1,11 @@
+import pet1Sm from '../assets/pet1-sm.png'
+import pet1Lg from '../assets/pet1-lg.png'
+import pet2Sm from '../assets/pet2-sm.png'
+import pet2Lg from '../assets/pet2-lg.png'
+import pet3Sm from '../assets/pet3-sm.png'
+import pet3Lg from '../assets/pet3-lg.png'
+import pet4Sm from '../assets/pet4-sm.png'
+import pet4Lg from '../assets/pet4-lg.png'
 export const navLinks = [
   {label: 'HOME', href: '#home'},
   {label: 'TESTIMONIALS', href: '#testimonials'},
@@ -27,30 +35,30 @@ export const testimonials = [
 
 export const images = [
   {
-   src: "../src/assets/pet1-sm.png", 
+   src: pet1Sm, 
    alt: "Image of Pet", 
-   path: "../src/assets/pet1-lg.png", 
+   path: pet1Lg, 
    name: "Tweety",
    content: "Tweety is a bundle of joy! Whether nibbling on greens or bouncing around, he’s guaranteed to brighten your day."
   },
   {
-   src: "../src/assets/pet2-sm.png", 
+   src: pet2Sm, 
    alt: "Image of Pet", 
-   path: "../src/assets/pet2-lg.png", 
+   path: pet2Lg, 
    name: "Luna",
    content: "Luna is the ultimate cool cat. Her playful antics and quirky sense of humor will keep you laughing all day long!"
   },
   {
-   src: "../src/assets/pet3-sm.png", 
+   src: pet3Sm, 
    alt: "Image of Pet", 
-   path: "../src/assets/pet3-lg.png", 
+   path: pet3Lg, 
    name: "Roxy",
    content: "Roxy knows her angles and loves to strike a pose. With her contagious smile and playful spirit, every moment with her is pawsitively picture-perfect."
   },
   {
-   src: "../src/assets/pet4-sm.png", 
+   src: pet4Sm, 
    alt: "Image of Pet", 
-   path: "../src/assets/pet4-lg.png", 
+   path: pet4Lg, 
    name: "Z & B",
    content: "Meet Z and B, the inseparable duo! Whether they’re chasing butterflies or snuggling together for naps, this pair reminds us that best friends come in all shapes and sizes."
   },

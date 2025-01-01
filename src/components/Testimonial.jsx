@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import prevArrow from '../assets/Prev_arrow.png'
+import nextArrow from '../assets/Next_arrow.png'
 
 const Testimonial = ({ testimonials, autoPlay = true, interval = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,23 +43,23 @@ const Testimonial = ({ testimonials, autoPlay = true, interval = 3000 }) => {
 
 
   return (
-    <div className="relative flex flex-col items-center md:mb-14">
+    <div className="relative flex flex-col items-center md:my-16">
       {/* Arrows */}
       <button
-        className="absolute top-1/2 transform -translate-y-1/2 left-0 px-1 py-2 rounded w-8"
+        className="absolute top-1/2 transform -translate-y-1/2 md:left-40 left-0 py-2 rounded w-8 px-1 md:px-0"
         onClick={goToPreviousSlide}
       >
-        <img src="../src/assets/Prev_arrow.png" alt="Previous Slide Icon" />
+        <img src={prevArrow} alt="Previous Slide Icon" />
       </button>
 
       {/* Slide Content */}
-      <div className="md:w-3/4 flex items-center justify-center rounded-lg border-2 border-secondary">
+      <div className="md:w-2/4 p-2 flex items-center justify-center rounded-lg border-2 border-secondary ">
         {testimonials[currentIndex].type === "text" ? (
           <div className={`text-center w-3/4 py-6 text-secondary transition-all duration-500 
           ${flipAnimate ? 'animate-flip-in-ver-left' : ''}`}>
-            <p className="font-inter font-light text-sm md:text-lg">{testimonials[currentIndex].testimonial}</p>
-            <p className="mt-4 font-inter font-medium">{testimonials[currentIndex].personName}</p>
-            <p className="mt-2">{testimonials[currentIndex].rating}</p>
+            <p className="font-inter font-light text-md md:text-xl">{testimonials[currentIndex].testimonial}</p>
+            <p className="mt-4 text-lg font-inter font-medium">{testimonials[currentIndex].personName}</p>
+            <p className="mt-2 text-2xl">{testimonials[currentIndex].rating}</p>
           </div>
         ) : (
           <img
@@ -69,10 +71,10 @@ const Testimonial = ({ testimonials, autoPlay = true, interval = 3000 }) => {
       </div>
 
       <button
-        className="absolute top-1/2 transform -translate-y-1/2 right-0 px-1 py-2 w-8"
+        className="absolute top-1/2 transform -translate-y-1/2 md:right-40 right-0 py-2 w-8 px-1 md:px-0"
         onClick={goToNextSlide}
       >
-        <img src="../src/assets/Next_arrow.png" alt="Previous Slide Icon" />
+        <img src={nextArrow} alt="Next Slide Icon" />
       </button>
     </div>
   );
